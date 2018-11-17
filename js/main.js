@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('button').on('submit', function(e){
         e.preventDefault();
     });  
-    let
+    let // creates variable for error:
         errorMessage = 'Please enter ';
         nameError = 'your full name.';
         emailError = 'an email address.';
