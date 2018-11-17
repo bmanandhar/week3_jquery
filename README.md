@@ -1,0 +1,1 @@
+This repo is the homework for week-3 onjQuery (11/14/2018). it still needs some correction!
