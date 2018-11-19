@@ -1,36 +1,19 @@
-console.log('js/main.js works Fine!')
+console.log('Sanity...');
 $(document).ready(function() {
-    $('button').on('submit', function(e){
-        e.preventDefault();
-    });  
-    let // creates variable for error:
-        errorMessage = 'Please enter ';
-        nameError = 'your full name.';
-        emailError = 'an email address.';
-        subjectError = 'a subject';
 
-        name = `${$('.name').html().length}`;
-        email = `${$('.email').html().length}`;
-        subject = `${$('.subject').html().length}`;
-        console.log('Hey0!', name);
+    $(':button').click(function(){
+        console.log("Button Clicked!!!");
 
-        if (name == 0) {
-            console.log(errorMessage + nameError);
-            $('name').append(`${errorMessage+nameError}`);
-
+        if ($('#name').html()== "") {
+            $(this).siblings('#name').addClass('error');
+            // $('#name').html() = "Please enter your full name.";
+            return false;
         }
 
-        if (email == 0) {
-            console.log(errorMessage + emailError);
-            $('email').append(`${errorMessage+emailError}`);
-
+        if ($('#email').html()== "") {
+            $(this).siblings('#email').addClass('error');
+            // $('#email').html() = "Please enter your email address.";
+            return false;
         }
-        if (subject == 0) {
-            console.log(errorMessage + subjectError);
-            $('subject').append(`${errorMessage+subjectError}`);
-
-        }
-
-
-
+    })
 });

@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/landing.css">
+	<script src="js/jquery-3.3.1.js"></script>
 
 </head>
 <body>
@@ -81,14 +82,12 @@
 		<div class="wrap">
 		<h2>Get in Touch</h2>
 			<form class="contact">
-				<input type="text" placeholder="Full Name" class="col-third name">
-				<name></name>
-				<input type="email" placeholder="Email" class="col-third email">
-				<email></email>
-				<input type="text" placeholder="Subject" class="col-third subject">
-				<subject></subject>
+				<input type="text" placeholder="Full Name" class="col-third" id="name">
+				<p id="name-error"></p>
+				<input type="email" placeholder="Email" class="col-third" id="email">
+				<input type="text" placeholder="Subject" class="col-third">
 				<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-				<button type="submit">Submit</button>
+				<input type="button" value="Submit">
 			</form>
 		</div>
 	</section>
@@ -100,7 +99,7 @@
 				<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
 			</div>
 			<input type="text" placeholder="Email Address">
-			<button type="submit">Subscribe</button>
+			<button type="submit" value="Submit">Subscribe</button>
 		</div>
 
 		<p class="copyright">&copy;2016 Sarah Holden</p>
